@@ -21,13 +21,9 @@ export function GoHome({className_box, style_box, className_cell, style_cell}) {
 
 	// a trick to change the color of svg
 	let name = get_css_value("--color_2");
-	console.log("name",name);
 	let hex = name_to_hex(name);
-	console.log("hex",hex);
 	let rgb = hex_to_rgb(hex);
-	console.log("rgb",rgb);
 	let result = rgb_to_filter(rgb);
-	console.log("result.filter",result.filter);
 	const img_style = {
 		filter: result.filter,
 	}
